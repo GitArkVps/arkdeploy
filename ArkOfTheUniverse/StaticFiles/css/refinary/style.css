@@ -1,0 +1,248 @@
+.menu-btn-refinary::before {
+  content: url('../../img/dashboard/bullet.png');
+  position: absolute;
+  top: -15px;
+  left: 40%;
+}
+
+#footer-dashboard {
+  position: relative!important;
+  width: 100%;
+  bottom: 0px;
+}
+
+#overlay {
+  width: 100%!important;
+  height: 100%!important;
+  background-color: #000000ce;
+  z-index: 1000000;
+}
+
+#overlay.inactive {
+  display: none;
+}
+
+#overlay.active {
+  display: flex;
+}
+
+.refinary-content {
+  flex-direction: row;
+}
+
+.title-refinary {
+  font-size: 3rem;
+}
+
+.ore-center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Refinary Help  */
+
+.refinary-help {
+  color: #fff;
+  padding: 10px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  width: 40px;
+  height: 45px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 11%;
+  text-align: center;  
+  cursor: pointer;
+}
+
+.refinary-help:hover {
+  color: #5c0969;
+  border-color: #5c0969;
+}
+
+.refinary-help-content.inactive {
+  display: none;
+}
+
+.refinary-help-content.active {
+  display: flex;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 20%;
+  padding: 50px;
+}
+
+.refinary-help-content {
+  background-color: #632969e0;
+  z-index: 10000001 ;
+  border-top: 20px solid #121212;
+}
+
+.refinary-help-title {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.refinary-help-guide {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+
+/* Refinary Value  */
+
+.refinary-value {
+  padding: 10px 50px;
+  background-color: #2a2a2a;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Refinary Submit  */
+
+.refinary-submit-btn {
+  font-size: 2.5rem;
+  background-color: #b80eb2;
+  padding: 10px 80px;
+  color: #000;
+  position: absolute;
+  left: 50%;
+  top: 63%;
+  transform: translateX(-50%);
+  cursor: pointer;
+}
+
+.quantity-refinary-item,
+.quantity-refined-item {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 50px;
+  border: 2px solid #5c0969;
+  margin-top: 20px;
+  font-size: x-large;
+  font-weight: 800;
+  background-color: #b80eb23a;
+}
+
+.carousel {
+  margin-left: auto;
+  margin-right: auto;
+  max-height: 200px!important;
+  max-width: 200px!important;
+}
+
+.carousel-item img{
+  width: 100px;
+}
+
+/* MediaQueries */
+
+@media (min-width: 1024px) and (max-width: 1366px) {
+  .title-refinary {
+    font-size: 2rem;
+  }
+  .carousel-item img {
+    width: 70px!important;
+    padding-top:60px;
+  }
+  .carousel-inner {
+    margin-top: -50px;
+  }
+  .refinary-submit-btn {
+    top: 65%;
+  }
+}
+
+@media (min-width: 360px) and (max-width: 768px) {
+
+  #content {
+    height: 100vh!important;
+  }
+
+  .refinary-content {
+    flex-direction: row;
+    margin-top: -25px;
+    justify-content: center;
+  }
+  .title-refinary {
+    display: flex;
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 700;
+    justify-content: center;
+  }
+  .carousel {
+    width: 100px;
+    justify-content: center;
+    align-items: center;
+    height: 100px!important;
+  }
+  .carousel-item {
+    width: 80px;
+    height: 80px;
+  }
+  .carousel-item img {
+    width: 50px;
+    margin: 20px auto -20px;
+  }
+
+  .refinary-help-content.active {
+    left: 0;
+    transform: translateX(0);
+    padding: 50px;
+    background-color: #5c0969;
+  }
+
+  .refinary-help-title {
+    font-size: 1rem;
+    font-weight: 800;
+    margin-bottom: 10px;
+  }
+  
+  .refinary-help-guide {
+    font-weight: 500;
+    font-size: 10px;
+  }
+
+  .refinary-value {
+    padding: 10px 50px;
+    background-color: #2a2a2a;
+    position: absolute;
+    left: 50%;
+    top: 78%;
+    transform: translateX(-50%);
+  }
+
+  .quantity-refinary-item,
+  .quantity-refined-item {
+    padding: 10px 30px;
+    margin-top: 60px;
+    font-size: small;
+    font-weight: 600;
+    background-color: #b80eb23a;
+  }
+
+  .refinary-submit-btn {
+    font-size: 1rem;
+    background-color: #b80eb2;
+    padding: 10px 80px;
+    color: #000;
+    position: absolute;
+    left: 50%;
+    top: 85%;
+    transform: translate(-50%);
+    cursor: pointer;
+  }
+
+  .refinary-help {
+    top: 15%;
+  }
+
+}

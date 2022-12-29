@@ -1,0 +1,7 @@
+@font-face {
+    font-family: 'astrojets';
+    src: url('./includes/css/fonts/astrojets-webfont.woff2') format('woff2'),
+         url('./includes/css/fonts/astrojets-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}

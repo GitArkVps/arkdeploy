@@ -1,0 +1,436 @@
+/* ID's */
+
+#menutoggle {
+  z-index: 9999!important;
+}
+
+#footer-dashboard {
+  position: absolute;
+  width: 100%;
+  bottom: 0px;
+}
+
+/* Topbar */
+
+.menu-btn-hangar::before {
+  content: url('../../img/dashboard/bullet.png');
+  position: absolute;
+  top: -15px;
+  left: 40%;
+}
+
+.list-none {
+  list-style-type: none;
+}
+
+.navbar-alert-content.active {
+  background-color: #5c0969;
+  border-radius: 3px;
+}
+
+/* Secondary Navbar */
+
+.subnav{
+  text-decoration: none!important;
+  color: #fff!important;
+  padding: auto 30px!important;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.subnav:hover {
+  border-bottom: #FF18F6 1px solid;
+}
+
+
+/* NFT's Carousels */
+
+.slide-item {
+  width: 400px!important;
+  margin-left: -200px!important;
+}
+
+.slide--container {
+  width: 500px!important;
+  margin-left: auto!important;
+  margin-right: auto!important;
+}
+
+/* Ship stats/rank/items  */
+
+.ship-stats-content {
+  width: 350px;
+  height: 260px;
+  background: rgba(89, 2, 94, 0.500);
+  background: linear-gradient(0deg, rgba(89, 2, 94, 0.500) 0%, rgba(0, 0, 0, 0.500) 59%);
+  border-radius: 6px;
+}
+
+/* Item */
+
+.item-header {
+  font-size: 2rem;
+}
+
+.item-content img{
+  width: 40px;
+  height: 40px;
+  margin-bottom: 20px;
+}
+
+/* Rank */
+
+.item-rarity,
+.item-element {
+  font-size: 1.5rem;
+  color: #FF18F6;
+
+}
+
+.fa-star { 
+  font-size: 10px;
+  padding: 0;
+  margin: 0;
+  display: block;
+}
+
+.rank-star-active {
+  color: #FF18F6;
+}
+
+/* Stats Health and Fuel*/
+
+.fuel-hangar{
+  margin-left: 40px;
+  justify-content: center;
+  
+}
+
+.circular-progress-health,
+.circular-progress-fuel {
+  position: relative;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+}
+.circular-progress-health:before,
+.circular-progress-fuel:before {
+  content: "";
+  position: absolute;
+  height: 84%;
+  width: 84%;
+  border-radius: 50%;
+  background-color: #000;
+}
+
+.value-container-health,
+.value-container-fuel {
+  font-size: 16px;
+  color: #ffffff;
+  z-index: 10;
+}
+
+/* Utilities */
+
+.item-utilities-content {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  position: relative;
+  transition: 1s ease-in-out;
+}
+
+.item-utilities-content img {
+  background-color: rgba(255, 255, 255, 0.316);
+  padding: 10px;
+  border-radius: 3px;
+  margin: 20px;
+  width: 60px;
+}
+
+.item-utilities-content picture::after{
+  content: 'x10';
+  color: #fff;
+  font-size: 9px;
+  background-color: #6C0C69;
+  padding: 5px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 15px;
+  left: 70px;
+}
+
+.item-utilities-content span{
+  margin: auto 20px;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.qty-input {
+  width: 50px;
+  margin: auto 20px;
+}
+
+.item-box {
+  width: 420px;
+  margin-left: 160px;
+  margin-top: 30px;
+  background-color: rgba(255, 255, 255, 0.389);
+  padding: 20px;
+  border-radius: 3px;
+  position: absolute;
+  top:20%;
+  left: 30%;
+  transform: translateX(-30%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: 1s ease-in-out  ;
+}
+
+.item-box button {
+  background-color: #6C0C69;
+  border: none;
+  color: #fff;
+  padding: 10px 30px;
+  border-radius: 3px;
+}
+
+.item-box button:hover {
+  border: 1px solid #FF18F6;
+}
+
+.item-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.item-box img {
+  width: 50px;
+  margin: 20px;
+}
+
+.item-description {
+  text-align: center;
+}
+
+.item-stats {
+  position: absolute;
+  bottom: 10px;
+}
+
+.item-time,
+.item-upgrade {
+  margin: 20px;
+}
+
+.item-time span,
+.item-upgrade span {
+  margin-left: 10px;
+  font-size: 16px;
+  margin-top: -5px;
+}
+
+.item-time i,
+.item-upgrade i {
+  color: #FF18F6;
+}
+
+.item-box-section.inactive {
+  display: none;
+}
+
+.item-box-section.active {
+  display: flex;
+}
+
+/* ORE  */
+
+.utilities {
+  width: 40%;
+  flex-direction: column;
+}
+
+.ore-content {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  position: relative;
+  margin-top: 20px;
+}
+
+.ore-content img {
+  background-color: rgba(255, 255, 255, 0.316);
+  padding: 10px;
+  border-radius: 3px;
+  margin: 20px;
+  width: 60px;
+  cursor: pointer;
+  margin-top: -20px;
+}
+
+.ore-content picture::after{
+  content: 'x10';
+  color: #fff;
+  font-size: 9px;
+  background-color: #6C0C69;
+  padding: 5px;
+  border-radius: 50%;
+  position: inherit;
+  margin-left: -40px;
+  margin-top: 20px!important;
+}
+
+
+
+/* Mediaqueries */
+
+@media (min-width: 360px) and (max-width: 428px) {
+ .hangar-subnav{
+  justify-content: center!important;
+ }
+
+ .carousel {
+  width: 100%!important;
+ }
+
+ .ships-stats {
+  flex-wrap: wrap;
+  margin-top: 10px;
+ }
+
+ .ship-stats-content {
+  margin-top: 20px!important;
+  background: rgba(89, 2, 94, .8);
+ }
+
+ /* Utilities  */
+
+ .utilities {
+  flex-direction: column;
+  width: 100%;
+ }
+
+ .item-box {
+  position: static;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateX(0);
+  margin: 5px;
+  width: 100%;
+ }
+
+ .item-utilities-content span {
+  font-size: .75rem;
+}
+.item-utilities-content img {
+  width: 50px;
+}
+
+.item-utilities-content picture::after{
+  bottom: 15px;
+  left: 60px;
+  font-size: 10px; 
+}
+
+ /* ORE  */
+
+ .ore {
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-evenly;
+ }
+
+.ore-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  position: relative;
+  margin-top: 60px;
+  width: 100%;
+}
+
+.ore-content picture {
+  margin-bottom: 10px;
+
+}
+
+.ore-content picture::after{
+  content: 'x10';
+  color: #fff;
+  font-size: 10px;
+  background-color: #6C0C69;
+  padding: 5px;
+  border-radius: 50%;
+  position: inherit;
+  margin-left: -30px;
+}
+
+ #footer-dashboard {
+  position: fixed!important;
+}
+
+}
+@media (min-width: 760px) and (max-width: 1023px) {
+  #footer-dashboard{
+    display: none;
+  }
+  .ship-stats-content {
+    border-radius: 0;
+  }
+  .item-box {
+    margin-left: 200px;
+  }
+  .item-utilities-content span {
+  margin: auto 20px;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.ore {
+  flex-wrap: wrap;
+}
+}
+@media (min-width: 1024px) and (max-width: 1365px) {
+#item-list {
+  margin-top: -34px;
+  margin-left: 25px;
+}
+.item-utilities-content span {
+  font-size: 1rem;
+}
+.item-utilities-content img {
+  width: 40px;
+}
+.item-box {
+  margin-top: 0;
+}
+.item-utilities-content picture::after{
+  left: 50px;
+}
+}
+@media (min-width: 1366px) and (max-width: 1400px) {
+  .hangar-subnav {
+    margin-top: 30px;
+  }
+  .item-box {
+    margin-top: 0;
+  }
+  #item-list {
+    margin-top: -34px;
+    margin-left: 25px;
+  }
+  .item-utilities-content span {
+    font-size: 1rem;
+  }
+  .item-utilities-content img {
+    width: 40px;
+  }
+  .item-utilities-content picture::after{
+    left: 50px;
+  }
+}
